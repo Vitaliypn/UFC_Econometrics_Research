@@ -61,7 +61,7 @@ def second_to_round(time: int) -> int:
     """
     Convert time to round
     """
-    return ceil(time/360)
+    return ceil(time/300)
 
 def history_winrate(df: pd.DataFrame) -> None:
     """
@@ -166,7 +166,7 @@ def replace_stats_with_avg(df: pd.DataFrame) -> None:
             df.loc[i, f"Fighter_{j}_TD"] = round(avg_tkd, 2)
             df.loc[i, f"Fighter_{j}_SUB"] = round(avg_subs, 2)
 
-def fighter_wrapper(func) -> function:
+def fighter_wrapper(func):
     """
     Wrapper for getting info
     """
