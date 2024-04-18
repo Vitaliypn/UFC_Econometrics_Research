@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="container-title">
+            Wellcome to 
+            <span class="container-title-highlighted">
+                ufc predictor!
+            </span>
+        </h1>
+        <div class="container-block">
+            <h3 class="container-block-title">
+                choose weight category
+            </h3>
+            <div>
+                <form action="/fight" method="get" class="content-block-form">  
+                    <select name="weight_chooser" class="content-block-selector">
+                        {% for name in weights %}
+                            <option value="{{name}}">{{name}}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit" class="content-block-form-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="fighter1"><img src="../static/stylesheets/assets/image1.png" alt=""></div>
+        <div class="fighter2"><img src="../static/stylesheets/assets/image2.png" alt=""></div>
+        <div class="fighter3"><img src="../static/stylesheets/assets/image3.png"></div>
+    </div>
+</body>
+</html>

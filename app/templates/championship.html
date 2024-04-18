@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+</head>
+<body>
+    <div class="championship-container">
+        <div class="championship-container-block">
+            <div class="champ-title">WINNER</div>
+            <div class="champ-name">{{ winner }}</div>
+            <div class="probability">CHANCE OF WINNING: {{ prediction }}%</div>
+        </div>
+        <div class="championship-container-block">
+            <img src="../static/stylesheets/assets/image4.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

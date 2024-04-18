@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Black Ops One";
+    src: url(./fonts/BlackOpsOne-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "League Spartan";
+    src: url(./fonts/LeagueSpartan-Thin.woff2) format('woff2');
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #2F1812;
+    color: #fff;
+    overflow-y: hidden;
+}
+
+.container {
+    width: 60vw;
+    text-align: center;
+}
+
+.fighter-container {
+    text-align: center;
+}
+
+.container-title {
+    font-family: 'Black Ops one';
+    text-transform: uppercase;
+    font-size: 6.5vw;
+}
+
+.container-title-highlighted {
+    color:#CE171B;
+}
+
+.container-block-title {
+    font-family: "League Spartan";
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2vw;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
+    margin-top: 5vw;
+}
+
+.content-block-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.content-block-selector {
+    background-color: transparent;
+    margin-bottom: 2.5vw;
+    width: 25vw;
+    height: 3vw;
+    text-align: center;
+    border-radius: 2vw;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Black Ops One";
+}
+
+.content-block-selector select {
+    display: none;
+}
+
+.content-block-form-btn {
+    width: 15vw;
+    height: 3vw;
+    text-transform: uppercase;
+    border-radius: 2vw;
+    font-size: 2vw;
+    border: none;
+    cursor: pointer;
+    -webkit-text-stroke: 0.1vw;
+
+}
+
+.fighter1, .fighter2, .fighter3 {
+    position: absolute;
+}
+
+.fighter1 {
+    bottom: -2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.fighter1 img {
+    width: 15vw;
+}
+
+.fighter2 {
+    bottom: -4vw;
+    right: 4vw;
+}
+
+.fighter2 img, .fighter3 img{
+    width: 30vw;
+}
+
+.fighter3 {
+    bottom: -4vw;
+    left: 0;
+}
+
+.fight-title {
+    font-size: 4vw;
+    font-family: "League Spartan";
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.3vw;
+    letter-spacing: 0.3vw;
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+}
+
+.fighter-form-container {
+    display: flex;
+    width: 90vw;
+    gap: 10vw;
+}
+
+.fighter-form-selector {
+    position: relative;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fighter-form-selector-fight {
+    background-color: white;
+    border-radius: 1vw;
+    border: none;
+    color: black;
+    font-size: 2vw;
+    height: 5vw;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2vw;
+    z-index: 2;
+}
+
+.fighter-form-selector img{
+    position: absolute;
+    width: 50vw;
+    height: 10vw;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%, -45%);
+}
+
+.versus {
+    position: absolute;
+    width: 90vw;
+    padding-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-family: "Black Ops One";
+    -webkit-text-stroke: 0.1vw;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+}
+
+.fighter-submit {
+    margin-top: 7.5vw;
+    margin-bottom: 2.5vw;
+    width: 17.5vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-text-stroke: 0.1vw;
+}
+
+.fight-quote {
+    text-transform: uppercase;
+    font-family: "League Spartan";
+    font-size: 1.5vw;
+    margin-top: 5vw;
+    -webkit-text-stroke: 0.1vw;
+}
+
+.championship-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.championship-container-block {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.championship-container-block img {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.champ-title {
+    font-family: "League Spartan";
+    color: #CE171B;
+    -webkit-text-stroke: 0.7vw;
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+}
+
+.champ-name {
+    font-size: 6vw;
+    background-color: white;
+    border-radius: 2vw;
+    color: black;
+    font-family: "League Spartan";
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    -webkit-text-stroke: 0.6vw;
+    margin: 2vw 0;
+}
+
+.probability {
+    text-align: left;
+    font-family: "League Spartan";
+    width: 30vw;
+    font-size: 1.5vw;
+    -webkit-text-stroke: 0.175vw;
+    letter-spacing: 0.2vw;
+}

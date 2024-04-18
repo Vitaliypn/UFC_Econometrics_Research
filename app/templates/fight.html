@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+</head>
+<body>
+    <div class="fighter-container">
+        <h1 class="fight-title">
+            choose 2 fighters
+        </h1>
+        <div>
+            <form action="./championship" method="get">
+                <div class="fighter-form-container">
+                    <div class="fighter-form-selector">
+                        <select name="fighter1" class="fighter-form-selector-fight">
+                            {% for name in names %}
+                                <option value="{{ name }}">{{ name }}</option>
+                            {% endfor %}
+                        </select>
+                        <img src="../static/stylesheets/assets/rectangle-2.png" alt="">
+                    </div>
+                    <div class="versus">
+                        VS
+                    </div>
+                    <div class="fighter-form-selector">
+                        <select name="fighter2" class="fighter-form-selector-fight">
+                            {% for name in names %}
+                                <option value="{{ name }}">{{ name }}</option>
+                            {% endfor %}
+                        </select>
+                        <img src="../static/stylesheets/assets/rectangle-2.png" alt="">
+                    </div>
+                </div>
+                <button type="submit" class="fighter-submit">Submit</button>
+            </form>
+            <div class="fight-quote">
+                “If you see me in a fight with a bear, pray for the bear.”
+            </div>
+        </div>
+    </div>
+</body>
+</html>
